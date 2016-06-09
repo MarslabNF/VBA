@@ -1,0 +1,13 @@
+
+
+'object (example: button) to open another workbook and one IE url
+
+Sub Cobsh_bt_Click()
+Dim ie As Object
+
+Set ie = CreateObject("Internetexplorer.Application")
+ie.Visible = True
+ie.Navigate "https://www.google.pt"
+
+Workbooks.Open ("X:\folder(s)\file.xlsm")
+End Sub
